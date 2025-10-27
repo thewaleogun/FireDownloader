@@ -33,3 +33,42 @@ cd ytfetch
 python -m venv venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\activate     # Windows
+```
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+### 4️⃣ Install FFmpeg (for audio conversion)
+```bash
+Linux
+sudo apt install ffmpeg
+
+macOs
+brew install ffmpeg
+
+Windows
+Download and install from ffmpeg.org/download
+```
+### 🚀 Usage Examples
+```bash
+🎬 Download a YouTube Video
+python firedown.py "https://www.youtube.com/watch?v=VIDEO_ID"
+
+🎧 Extract Audio Only
+python firedown.py "https://www.youtube.com/watch?v=VIDEO_ID" --audio
+
+📜 Download Playlist
+python firedown.py "https://www.youtube.com/playlist?list=YOUR_LIST_ID" --playlist
+
+💾 Save to Custom Folder
+python firedown.py "https://youtu.be/abcd1234" -d ./downloads
+
+⚙️ Options and Flags
+Flag	Description
+--audio	Download audio only
+--audio-format	Audio format (mp3, m4a, flac, etc.)
+--audio-quality	Audio bitrate (default: 192)
+--output	Custom filename template
+--resume	Resume partial downloads
+--verbose	Enable debug logs
+
