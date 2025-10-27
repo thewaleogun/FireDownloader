@@ -27,7 +27,7 @@ A minimal Python command-line tool for downloading YouTube videos or extracting 
 ```bash
 git clone https://github.com/thewaleogun/FireDownloader.git
 cd ytfetch
-
+```
 ### 2️⃣ (Optional) Create a Virtual Environment
 ```bash
 python -m venv venv
